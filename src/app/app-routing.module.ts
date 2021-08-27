@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'belvo', component: BelvoComponent },
+  // { path: 'belvo', component: BelvoComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

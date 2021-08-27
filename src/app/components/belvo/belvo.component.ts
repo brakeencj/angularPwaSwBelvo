@@ -15,26 +15,26 @@ export class BelvoComponent implements OnInit {
 }
 // check our node package on github
 // https://github.com/belvo-finance/belvo-js
-var belvo = require('belvo').default;
+// var belvo = require('belvo').default;
 
-var client = new belvo(
-  'bf73fb50-62f1-4775-9a71-311d8e8817dd',
-  'eiE-xIw8P-Z4COTZlhoZGE5DCTZst5il-I5JXd38-AoQKzXYlPq76GkCtT@2afrR',
-  'https://sandbox.belvo.com'
-);
+// var client = new belvo(
+//   'bf73fb50-62f1-4775-9a71-311d8e8817dd',
+//   'eiE-xIw8P-Z4COTZlhoZGE5DCTZst5il-I5JXd38-AoQKzXYlPq76GkCtT@2afrR',
+//   'https://sandbox.belvo.com'
+// );
 
-client.connect().then(function() {
-  client.widgetToken
-    .create()
-    .then((response: any) => {
-      res.json(response);
-    })
-    .catch((error: any) => {
-      res.status(500).send({
-        message: error.message
-      });
-    });
-});
+// client.connect().then(function() {
+//   client.widgetToken
+//     .create()
+//     .then((response: any) => {
+//       res.json(response);
+//     })
+//     .catch((error: any) => {
+//       res.status(500).send({
+//         message: error.message
+//       });
+//     });
+// });
 
 // Insert the following code after AppComponent() class from Step 1.
 async function createWidget() {

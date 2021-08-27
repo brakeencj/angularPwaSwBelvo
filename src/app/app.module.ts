@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { BelvoComponent } from './components/belvo/belvo.component';
+// import { BelvoComponent } from './components/belvo/belvo.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BelvoComponent,
+    // BelvoComponent,
     NavbarComponent,
     HomeComponent
   ],
